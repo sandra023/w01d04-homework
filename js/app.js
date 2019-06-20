@@ -12,13 +12,12 @@
 
 //2. Palindrome Again.
 
-// const reverseOfString = (string) => {
-// 	reverseOfStringLowerCase = " ";
-// 	for (let i = string.length-1; i >= 0; i--){	
-// 	reverseOfStringLowerCase += string[i]
-// 	return reverseOfStringLowerCase.toLowerCase()
-// }}
-// reverseOfString("hello");
+// Write a function checkPalindrome that accepts a single argument, a string. 
+// Yes, you've done it before, but do it again. Later in this assignment we're 
+// gonna beef up our palindrome function some. See if you can do it without 
+// looking back at your previous answer. The function should return true if 
+// the string is a palindrome, false if not. Make sure your function will 
+// give the correct answer for words with capital letters.
 
 
 const checkPalindrome = (string) => {
@@ -36,15 +35,8 @@ console.log(checkPalindrome("Radar"));
 console.log(checkPalindrome("Borscht"));
 
 
-// 3. Digit Sum
-// Write a function sumDigits that accepts a number and returns
-//  the sum of its digits.
 
-// const sumDigits = () => {
-// 	for (let i = 0; )
-// }
 
-// console.log(sumDigits(42));
 
 
 
