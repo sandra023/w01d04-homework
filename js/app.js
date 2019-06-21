@@ -52,6 +52,29 @@ const sumDigits = (num) => {
 console.log(sumDigits(127));
 
 
+// 4. Pythagoras
+// Write a function calculateSide that takes two arguments: 
+// sideA and sideB, and returns the solution for sideC using 
+// the Pythagorean theorem.
+
+// hint: discover the Pythagorean Theorem on a website 
+// called google.com
+// hint: checkout the Math methods in javascript
+
+
+const calculateSide = (sideA, sideB) =>{
+return Math.sqrt(sideA*sideA + sideB*sideB)
+}
+console.log(calculateSide(2,4));
+//a*a * b*b = c*c
+
+
+
+
+
+
+
+
 
 
 
