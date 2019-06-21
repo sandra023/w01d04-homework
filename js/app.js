@@ -39,17 +39,17 @@
 // Write a function sumDigits that accepts a number and returns
 //  the sum of its digits.
 
-const sumDigits = (num) => {
+// const sumDigits = (num) => {
 
-         let sum = 0;
-         while(num > 0) {
-            sum += num % 10;
-            num = Math.floor(num / 10);
-         }console.log(sum);
+//          let sum = 0;
+//          while(num > 0) {
+//             sum += num % 10;
+//             num = Math.floor(num / 10);
+//          }console.log(sum);
 
-}
+// }
 
-console.log(sumDigits(127));
+// console.log(sumDigits(127));
 
 
 // 4. Pythagoras
@@ -62,14 +62,26 @@ console.log(sumDigits(127));
 // hint: checkout the Math methods in javascript
 
 
-const calculateSide = (sideA, sideB) =>{
-return Math.sqrt(sideA*sideA + sideB*sideB)
-}
-console.log(calculateSide(2,4));
+// const calculateSide = (sideA, sideB) =>{
+// return Math.sqrt(sideA*sideA + sideB*sideB)
+// }
+// console.log(calculateSide(2,4));
 //a*a * b*b = c*c
 
+// 5. Sum Array
+// Write a function sumArray that takes an array as an argument. 
+// The array should contain numbers. The function should return 
+// the sum of the numbers in the array.
 
+const sumArray = (ary) => {
+	sum = 0;
+	for (let i= 0; i <ary.length; i++){
+		sum += ary[i];
+	}
+console.log(sum);
+}
 
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 
 
