@@ -20,20 +20,36 @@
 // give the correct answer for words with capital letters.
 
 
-const checkPalindrome = (string) => {
-	let reverseOfString = "";
-	for(let i = string.length-1; i >= 0; i--){
-	reverseOfString += string[i].toLowerCase()
-}	if (string.toLowerCase()===reverseOfString) {
-		return 'This is a Palindrome'
-	} else {
-		return 'This is not a Palindrome'
-	}
+// const checkPalindrome = (string) => {
+// 	let reverseOfString = "";
+// 	for(let i = string.length-1; i >= 0; i--){
+// 	reverseOfString += string[i].toLowerCase()
+// }	if (string.toLowerCase()===reverseOfString) {
+// 		return 'This is a Palindrome'
+// 	} else {
+// 		return 'This is not a Palindrome'
+// 	}
+// }
+
+// console.log(checkPalindrome("Radar"));
+// console.log(checkPalindrome("Borscht"));
+
+
+// 3. Digit Sum
+// Write a function sumDigits that accepts a number and returns
+//  the sum of its digits.
+
+const sumDigits = (num) => {
+
+         let sum = 0;
+         while(num > 0) {
+            sum += num % 10;
+            num = Math.floor(num / 10);
+         }console.log(sum);
+
 }
 
-console.log(checkPalindrome("Radar"));
-console.log(checkPalindrome("Borscht"));
-
+console.log(sumDigits(127));
 
 
 
