@@ -73,23 +73,72 @@
 // The array should contain numbers. The function should return 
 // the sum of the numbers in the array.
 
-const sumArray = (ary) => {
-	sum = 0;
-	for (let i= 0; i <ary.length; i++){
-		sum += ary[i];
+// const sumArray = (ary) => {
+// 	sum = 0;
+// 	for (let i= 0; i <ary.length; i++){
+// 		sum += ary[i];
+// 	}
+// 	return sum
+// console.log(sum);
+// }
+
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+
+// 6. Prime Numbers
+// A Prime number is a number that is not evenly divisible by another 
+// number except 1 and itself. If you want to read more deeply about 
+// it, go here. To test whether a number is Prime, you only need to test 
+// as far as the square root of that number. This is advisable for optimization 
+// and testing large numbers.
+
+// Step One
+// Write a function called checkPrime that will test whether a number is Prime. 
+// The function will return true (Boolean) if Prime, false if not. 
+// Hint: Check every number up to the square root. To do this, try a for loop.
+
+// Step Two
+// Write another function called printPrimes that will print (console log) all 
+// the Primes up to an arbitrary limit. For example, if you invoke your 
+// function with printPrimes(97), it will print all the Prime numbers up to 
+// and including 97. This function can call on the previous checkPrime function.
+
+
+// const checkPrime = (number) => {
+// 	for(let i = 2; i<number; i++){
+// 		if (number % i === 0){
+// 			return 'This number is not prime.'
+// 		} else {
+// 			return 'This number is prime.'
+// 		}
+// }}
+
+// console.log(checkPrime(7));
+
+
+
+
+const checkPrime = (number) => {
+	if ( number === 0 || number === 1) {
+            return false;
+	} for(let i = 2; i<number; i++){
+		if (number % i === 0){
+		return false
+		} else if (number === 2) { }
+}return true
 	}
-console.log(sum);
+// console.log(checkPrime(81));
+
+const printPrimes = (arbitrary) => {
+	for(let i = 0; i<=arbitrary; i++){
+		if (checkPrime(i) === true){
+			console.log(i)
+
+		}
+}
 }
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
-
-
-
-
-
-
-
-
+printPrimes(100);
 
 
 
