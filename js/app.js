@@ -20,16 +20,16 @@
 // give the correct answer for words with capital letters.
 
 
-// const checkPalindrome = (string) => {
-// 	let reverseOfString = "";
-// 	for(let i = string.length-1; i >= 0; i--){
-// 	reverseOfString += string[i].toLowerCase()
-// }	if (string.toLowerCase()===reverseOfString) {
-// 		return 'This is a Palindrome'
-// 	} else {
-// 		return 'This is not a Palindrome'
-// 	}
-// }
+const checkPalindrome = (string) => {
+	let reverseOfString = "";
+	for(let i = string.length-1; i >= 0; i--){
+	reverseOfString += string[i].toLowerCase()
+}	if (string.toLowerCase()===reverseOfString) {
+		return 'This is a Palindrome'
+	} else {
+		return 'This is not a Palindrome'
+	}
+}
 
 // console.log(checkPalindrome("Radar"));
 // console.log(checkPalindrome("Borscht"));
@@ -39,17 +39,17 @@
 // Write a function sumDigits that accepts a number and returns
 //  the sum of its digits.
 
-// const sumDigits = (num) => {
+const sumDigits = (num) => {
 
-//          let sum = 0;
-//          while(num > 0) {
-//             sum += num % 10;
-//             num = Math.floor(num / 10);
-//          }console.log(sum);
+         let sum = 0;
+         while(num > 0) {
+            sum += num % 10;
+            num = Math.floor(num / 10);
+         }console.log(sum);
 
-// }
+}
 
-// console.log(sumDigits(127));
+console.log(sumDigits(127));
 
 
 // 4. Pythagoras
@@ -62,27 +62,27 @@
 // hint: checkout the Math methods in javascript
 
 
-// const calculateSide = (sideA, sideB) =>{
-// return Math.sqrt(sideA*sideA + sideB*sideB)
-// }
-// console.log(calculateSide(2,4));
-//a*a * b*b = c*c
+const calculateSide = (sideA, sideB) =>{
+return Math.sqrt(sideA*sideA + sideB*sideB)
+}
+console.log(calculateSide(2,4));
+a*a * b*b = c*c
 
 // 5. Sum Array
 // Write a function sumArray that takes an array as an argument. 
 // The array should contain numbers. The function should return 
 // the sum of the numbers in the array.
 
-// const sumArray = (ary) => {
-// 	sum = 0;
-// 	for (let i= 0; i <ary.length; i++){
-// 		sum += ary[i];
-// 	}
-// 	return sum
-// console.log(sum);
-// }
+const sumArray = (ary) => {
+	sum = 0;
+	for (let i= 0; i <ary.length; i++){
+		sum += ary[i];
+	}
+	return sum
+console.log(sum);
+}
 
-// console.log(sumArray([1, 2, 3, 4, 5, 6]));
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 
 // 6. Prime Numbers
@@ -104,17 +104,6 @@
 // and including 97. This function can call on the previous checkPrime function.
 
 
-// const checkPrime = (number) => {
-// 	for(let i = 2; i<number; i++){
-// 		if (number % i === 0){
-// 			return 'This number is not prime.'
-// 		} else {
-// 			return 'This number is prime.'
-// 		}
-// }}
-
-// console.log(checkPrime(7));
-
 
 
 
@@ -133,7 +122,7 @@ const printPrimes = (arbitrary) => {
 	for(let i = 0; i<=arbitrary; i++){
 		if (checkPrime(i) === true){
 			console.log(i)
-
+			
 		}
 }
 }
